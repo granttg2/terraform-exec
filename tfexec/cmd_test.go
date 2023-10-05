@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hashicorp/terraform-exec/internal/version"
+	"github.com/granttg2/terraform-exec/internal/version"
 )
 
 func TestMergeUserAgent(t *testing.T) {

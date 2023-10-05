@@ -1,4 +1,4 @@
-[![PkgGoDev](https://pkg.go.dev/badge/github.com/hashicorp/terraform-exec)](https://pkg.go.dev/github.com/hashicorp/terraform-exec)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/granttg2/terraform-exec)](https://pkg.go.dev/github.com/granttg2/terraform-exec)
 
 # terraform-exec
 
@@ -37,7 +37,7 @@ import (
 	"github.com/hashicorp/go-version"
 	"github.com/hashicorp/hc-install/product"
 	"github.com/hashicorp/hc-install/releases"
-	"github.com/hashicorp/terraform-exec/tfexec"
+	"github.com/granttg2/terraform-exec/tfexec"
 )
 
 func main() {

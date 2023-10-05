@@ -16,9 +16,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/granttg2/terraform-exec/tfexec"
 	"github.com/hashicorp/go-version"
-
-	"github.com/hashicorp/terraform-exec/tfexec"
 )
 
 var (

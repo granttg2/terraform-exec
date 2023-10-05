@@ -16,7 +16,7 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/hashicorp/terraform-exec/internal/version"
+	"github.com/granttg2/terraform-exec/internal/version"
 )
 
 const (
@@ -30,7 +30,6 @@ const (
 	logProviderEnvVar        = "TF_LOG_PROVIDER"
 	reattachEnvVar           = "TF_REATTACH_PROVIDERS"
 	appendUserAgentEnvVar    = "TF_APPEND_USER_AGENT"
-	workspaceEnvVar          = "TF_WORKSPACE"
 	disablePluginTLSEnvVar   = "TF_DISABLE_PLUGIN_TLS"
 	skipProviderVerifyEnvVar = "TF_SKIP_PROVIDER_VERIFY"
 
@@ -48,7 +47,6 @@ var prohibitedEnvVars = []string{
 	logProviderEnvVar,
 	reattachEnvVar,
 	appendUserAgentEnvVar,
-	workspaceEnvVar,
 	disablePluginTLSEnvVar,
 	skipProviderVerifyEnvVar,
 }
@@ -167,9 +165,6 @@ func (tf *Terraform) buildEnv(mergeEnv map[string]string) []string {
 
 	// constant automation override env vars
 	env[automationEnvVar] = "1"
-
-	// force usage of workspace methods for switching
-	delete(env, workspaceEnvVar)
 
 	if tf.disablePluginTLS {
 		env[disablePluginTLSEnvVar] = "1"

@@ -17,8 +17,8 @@ import (
 	"github.com/hashicorp/go-version"
 	tfjson "github.com/hashicorp/terraform-json"
 
-	"github.com/hashicorp/terraform-exec/tfexec"
-	"github.com/hashicorp/terraform-exec/tfexec/internal/testutil"
+	"github.com/granttg2/terraform-exec/tfexec"
+	"github.com/granttg2/terraform-exec/tfexec/internal/testutil"
 )
 
 var (

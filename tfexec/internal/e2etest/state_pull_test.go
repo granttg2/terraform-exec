@@ -7,9 +7,8 @@ import (
 	"context"
 	"testing"
 
+	"github.com/granttg2/terraform-exec/tfexec"
 	"github.com/hashicorp/go-version"
-
-	"github.com/hashicorp/terraform-exec/tfexec"
 )
 
 func TestStatePull(t *testing.T) {

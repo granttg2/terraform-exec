@@ -7,7 +7,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/hashicorp/terraform-exec/tfexec/internal/testutil"
+	"github.com/granttg2/terraform-exec/tfexec/internal/testutil"
 )
 
 func TestStatePull(t *testing.T) {
